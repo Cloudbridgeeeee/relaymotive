@@ -1,0 +1,187 @@
+{
+  "name": "RelayMotive",
+  "primary": "Book a fleet trial",
+  "accent": "#5ab9fc",
+  "ink": "#e9edf3",
+  "bg": "#0a0d14",
+  "surface": "#131824",
+  "fontLink": "<link href=\"https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@400..700&family=JetBrains+Mono:wght@400..500&display=swap\" rel=\"stylesheet\">",
+  "fontDisplay": "\"Host Grotesk\", system-ui, sans-serif",
+  "fontText": "\"Host Grotesk\", system-ui, sans-serif",
+  "client": "Ikeja Logistics fleet",
+  "note": "A fixed fleet of 64 vehicles. Forecasts here come from a fixed model in your browser; no AI service is called.",
+  "tabs": {
+    "overview": "Fleet",
+    "records": "Vehicles",
+    "queue": "Recommendations"
+  },
+  "overview": {
+    "title": "Services due, next 8 weeks",
+    "kpis": [
+      [
+        "Vehicles",
+        "64"
+      ],
+      [
+        "Due in 30 days",
+        "9"
+      ],
+      [
+        "Repeat faults",
+        "4"
+      ],
+      [
+        "Workshop bays",
+        "6"
+      ]
+    ],
+    "chart": {
+      "title": "Services due per week against bay capacity",
+      "labels": [
+        "W1",
+        "W2",
+        "W3",
+        "W4",
+        "W5",
+        "W6",
+        "W7",
+        "W8"
+      ],
+      "values": [
+        5,
+        7,
+        4,
+        8,
+        3,
+        6,
+        9,
+        4
+      ],
+      "threshold": 6,
+      "thresholdLabel": "6 bays a week",
+      "caption": "Weeks above the line need a service moved or an extra shift."
+    }
+  },
+  "records": {
+    "title": "Vehicles",
+    "searchHint": "Registration or model",
+    "statusCol": 4,
+    "columns": [
+      "Registration",
+      "Model",
+      "Mileage",
+      "Last job",
+      "Status",
+      "Due in"
+    ],
+    "tones": {
+      "Repeat fault": "bad",
+      "Service due": "warn",
+      "On plan": "good"
+    },
+    "rows": [
+      [
+        "LAG 118 APP",
+        "Isuzu NPR",
+        "96,440",
+        "Front brake pads",
+        "Repeat fault",
+        "2 days"
+      ],
+      [
+        "LAG 412 KJA",
+        "Toyota Hiace",
+        "184,210",
+        "Oil and filter",
+        "Service due",
+        "6 days"
+      ],
+      [
+        "LAG 266 KJA",
+        "Ford Transit",
+        "142,880",
+        "Clutch report",
+        "Service due",
+        "12 days"
+      ],
+      [
+        "LAG 044 IKJ",
+        "Toyota Hiace",
+        "201,550",
+        "Tyres at 3 mm",
+        "Service due",
+        "19 days"
+      ],
+      [
+        "LAG 301 KJA",
+        "Toyota Hiace",
+        "157,300",
+        "P0420 cleared",
+        "Repeat fault",
+        "24 days"
+      ],
+      [
+        "LAG 730 IKJ",
+        "Toyota Hilux",
+        "61,020",
+        "Air filter",
+        "On plan",
+        "41 days"
+      ],
+      [
+        "LAG 905 APP",
+        "Isuzu NPR",
+        "88,130",
+        "Coolant leak",
+        "On plan",
+        "58 days"
+      ],
+      [
+        "LAG 552 APP",
+        "Ford Transit",
+        "73,900",
+        "Battery",
+        "On plan",
+        "70 days"
+      ],
+      [
+        "LAG 820 KJA",
+        "Toyota Hilux",
+        "45,610",
+        "Wipers, bulbs",
+        "On plan",
+        "94 days"
+      ]
+    ]
+  },
+  "queue": {
+    "title": "Recommendations for mechanic review",
+    "lead": "Each one cites the job cards behind it. Nothing is booked until a mechanic approves.",
+    "items": [
+      {
+        "id": "cal-118",
+        "title": "Inspect left front caliper, LAG 118 APP",
+        "detail": "Isuzu NPR, 96,440 km.",
+        "reason": "Front pads replaced three times in five months, wear uneven on the left each time."
+      },
+      {
+        "id": "svc-412",
+        "title": "Book oil and filter service, LAG 412 KJA",
+        "detail": "Toyota Hiace, due at 185,000 km.",
+        "reason": "Currently 184,210 km at about 130 km a day."
+      },
+      {
+        "id": "cat-301",
+        "title": "Check catalytic converter, LAG 301 KJA",
+        "detail": "Toyota Hiace, fault P0420.",
+        "reason": "The code returned 41 days after it was cleared."
+      },
+      {
+        "id": "tyre-044",
+        "title": "Replace front tyres, LAG 044 IKJ",
+        "detail": "Toyota Hiace, tread 3 mm.",
+        "reason": "Tread fell 1 mm in the last 9,000 km."
+      }
+    ]
+  }
+}

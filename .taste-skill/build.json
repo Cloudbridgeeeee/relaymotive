@@ -1,0 +1,11 @@
+{
+ "page": "dist/index.html",
+ "dir": "/home/user/relaymotive",
+ "kind": "software",
+ "start": "2026-11-25T02:15:04.485Z",
+ "by": "start.mjs",
+ "url": null,
+ "root": "dist",
+ "category": "vehicle maintenance forecasting software",
+ "primary": "Book a fleet trial"
+}
